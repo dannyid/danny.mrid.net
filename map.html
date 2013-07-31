@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sunsets</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link href="./img/sun_favicon.ico" rel="icon" type="image/x-icon" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800' rel='stylesheet' type='text/css'>
+
+
+    <style>
+	html, 
+	body, 
+	#map-canvas {
+	    margin: 0;
+	    padding: 0;
+        height: 100%;
+        z-index: 100;
+        }
+
+	/* Remove Google branding */ 
+	div.gmnoprint,
+	div.gm-style-cc,
+	div#map-canvas > div.gm-style > div:nth-child(2) {
+	    display: none;
+	}
+
+    #time {
+        background: black;
+        opacity: 0.9;
+        font-family: "Open Sans", sans-serif;
+        font-size: 40px;
+        color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 200;
+        padding: 0px 10px 0px 10px;
+        -o-transition: opacity .2s ;
+        -ms-transition: opacity .2s;
+        -moz-transition: opacity .2s;
+        -webkit-transition: opacity .2s;
+        transition: opacity .2s;
+    }
+
+    #time:hover {
+        opacity: 0.9;
+    }
+
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+</head>
+<body>
+    <div><span id="time"></span></div>
+    <div id="map-canvas"></div>
+    <script src="./js/time.js"></script>
+    <script src="./js/map.js"></script>
+</body>
+</html>
