@@ -1,5 +1,3 @@
-READ ME
+After cloning the repo, run server.js via node.
 
-ME TOO
-
-same
+Then open your browser to http://localhost:8080
